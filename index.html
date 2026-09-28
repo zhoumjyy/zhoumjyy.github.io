@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高中物理仿真平台</title>
+<meta http-equiv="refresh" content="0; url=/physics-sim-platform/">
+<link rel="canonical" href="https://zhoumjyy.github.io/physics-sim-platform/">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+        background: radial-gradient(circle at 30% 15%, #16384f 0%, #0b1826 58%, #060d16 100%);
+        font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+        color: #eef4fc; display: flex; align-items: center; justify-content: center; padding: 24px;
+    }
+    .box {
+        max-width: 460px; width: 100%; text-align: center;
+        background: rgba(18, 34, 50, 0.42);
+        backdrop-filter: blur(18px) saturate(180%);
+        -webkit-backdrop-filter: blur(18px) saturate(180%);
+        border: 1px solid rgba(255,255,255,0.08); border-radius: 20px;
+        box-shadow: 0 24px 50px -20px rgba(0,0,0,0.8);
+        padding: 34px 28px 30px;
+    }
+    h1 { font-size: 21px; font-weight: 600; letter-spacing: .5px; }
+    p.sub { margin-top: 8px; font-size: 13px; color: #9fb6d4; line-height: 1.6; }
+    a.go {
+        display: inline-block; margin-top: 22px; padding: 11px 26px; border-radius: 11px;
+        background: linear-gradient(135deg, #3d7fd0, #2b5a8c); color: #fff; text-decoration: none;
+        font-size: 14.5px; border: 1px solid rgba(140,200,255,0.45);
+        box-shadow: 0 8px 20px -8px rgba(60,140,230,0.7); transition: transform .15s ease;
+    }
+    a.go:hover { transform: translateY(-1px); }
+    .spin {
+        width: 26px; height: 26px; margin: 20px auto 0;
+        border: 3px solid rgba(255,255,255,0.14); border-top-color: #6fb0ff;
+        border-radius: 50%; animation: r 0.9s linear infinite;
+    }
+    @keyframes r { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="box">
+    <h1>高中物理仿真平台</h1>
+    <p class="sub">正在自动进入……<br>若 2 秒后没有跳转，请点击下面的按钮。</p>
+    <div class="spin"></div>
+    <a class="go" href="/physics-sim-platform/">进入仿真平台</a>
+</div>
+<script>location.replace('/physics-sim-platform/');</script>
+</body>
+</html>
